@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gW6-Fd-vgK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Nyy-lm-F8u">
+            <objects>
+                <viewController storyboardIdentifier="startPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Alc-RH-Lt2" customClass="ViewController" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gk2-fs-AXY"/>
+                        <viewControllerLayoutGuide type="bottom" id="4c1-ln-2Lw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5mJ-be-1mN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7I-HZ-6Fd" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="67" y="232" width="240" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Facebook"/>
+                                <connections>
+                                    <action selector="onClickLoginWithFacebook:" destination="Alc-RH-Lt2" eventType="touchUpInside" id="Jz2-PP-tqV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deG-cE-IuC">
+                                <rect key="frame" x="107" y="315" width="159" height="36"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="justgo"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="直接去看看！"/>
+                                <connections>
+                                    <segue destination="AmO-QZ-fDf" kind="show" id="QWh-TW-boK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oLg-bx-4pv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-204" y="1138"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="tJ0-Ky-Huz">
+            <objects>
+                <pageViewController storyboardIdentifier="MyPageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="gW6-Fd-vgK" customClass="PageViewController" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qC5-Ua-YTg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2083" y="445"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aR7-aF-8ME">
+            <objects>
+                <viewController storyboardIdentifier="Page1" id="Snt-fL-5UI" customClass="ViewController" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="soN-vm-fYU"/>
+                        <viewControllerLayoutGuide type="bottom" id="09r-lm-QaJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p4w-wD-gga">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="推薦你可以吃什麼東西。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SqQ-J8-QRE">
+                                <rect key="frame" x="86.5" y="469" width="202" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="這個App能夠在你不知道要吃什麼的時候" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvP-ve-vTn">
+                                <rect key="frame" x="59" y="391" width="327" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Page1" translatesAutoresizingMaskIntoConstraints="NO" id="LOQ-YH-ROj">
+                                <rect key="frame" x="0.0" y="-31" width="375" height="698"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbX-DH-VJm">
+                                <rect key="frame" x="118.5" y="211" width="139" height="24"/>
+                                <string key="text">這個App能夠在
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="推薦你可以吃的東西" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csz-lF-Sby">
+                                <rect key="frame" x="95.5" y="303" width="184" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你不知道要吃什麼東西的時候" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jzw-9z-BqL">
+                                <rect key="frame" x="55.5" y="256" width="265" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="csz-lF-Sby" firstAttribute="centerX" secondItem="SqQ-J8-QRE" secondAttribute="centerX" id="04t-xh-F48"/>
+                            <constraint firstItem="LOQ-YH-ROj" firstAttribute="bottom" secondItem="09r-lm-QaJ" secondAttribute="top" id="7dx-vb-oAq"/>
+                            <constraint firstItem="dvP-ve-vTn" firstAttribute="leading" secondItem="p4w-wD-gga" secondAttribute="leadingMargin" constant="43" id="8H5-eq-Py1"/>
+                            <constraint firstItem="XbX-DH-VJm" firstAttribute="centerX" secondItem="LOQ-YH-ROj" secondAttribute="centerX" id="FIY-AM-lBC"/>
+                            <constraint firstItem="dvP-ve-vTn" firstAttribute="top" secondItem="csz-lF-Sby" secondAttribute="bottom" constant="64" id="UuR-Eh-bCX"/>
+                            <constraint firstItem="csz-lF-Sby" firstAttribute="top" secondItem="Jzw-9z-BqL" secondAttribute="bottom" constant="23" id="Ydq-x4-g7F"/>
+                            <constraint firstItem="XbX-DH-VJm" firstAttribute="centerX" secondItem="Jzw-9z-BqL" secondAttribute="centerX" id="buv-Fd-sNO"/>
+                            <constraint firstAttribute="trailing" secondItem="LOQ-YH-ROj" secondAttribute="trailing" id="eDi-X3-6MA"/>
+                            <constraint firstItem="Jzw-9z-BqL" firstAttribute="centerX" secondItem="csz-lF-Sby" secondAttribute="centerX" id="eHM-OY-cLn"/>
+                            <constraint firstItem="XbX-DH-VJm" firstAttribute="top" secondItem="soN-vm-fYU" secondAttribute="bottom" constant="191" id="k7k-61-bhF"/>
+                            <constraint firstItem="LOQ-YH-ROj" firstAttribute="top" secondItem="p4w-wD-gga" secondAttribute="topMargin" constant="-31" id="mzY-er-Vom"/>
+                            <constraint firstItem="Jzw-9z-BqL" firstAttribute="top" secondItem="XbX-DH-VJm" secondAttribute="bottom" constant="21" id="ofW-VA-VYs"/>
+                            <constraint firstItem="LOQ-YH-ROj" firstAttribute="leading" secondItem="p4w-wD-gga" secondAttribute="leading" id="p4I-Ck-aBf"/>
+                            <constraint firstItem="SqQ-J8-QRE" firstAttribute="top" secondItem="dvP-ve-vTn" secondAttribute="bottom" constant="56" id="ueh-bN-LFs"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1a6-oV-buc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1197.1014492753625" y="425.54347826086962"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8jS-EN-Fka">
+            <objects>
+                <viewController storyboardIdentifier="Page2" id="gZw-fh-IsF" customClass="ViewController" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B6B-GJ-BgS"/>
+                        <viewControllerLayoutGuide type="bottom" id="wAL-pA-FLi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gx6-8B-fQY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="只要按下你等等要吃的三餐的其中一種" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkS-4x-AHg">
+                                <rect key="frame" x="31.5" y="193" width="312" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Page2" translatesAutoresizingMaskIntoConstraints="NO" id="ity-PA-Rvn">
+                                <rect key="frame" x="0.0" y="-31" width="374" height="698"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="請好好利用它吧！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxh-GL-sFI">
+                                <rect key="frame" x="114.5" y="504" width="164" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8E2-dg-3ez"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="只要按下你等等要吃的" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEG-1s-XtU">
+                                <rect key="frame" x="84.5" y="247" width="204" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="他就會直接跳出圖片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEV-GQ-coE">
+                                <rect key="frame" x="94.5" y="370" width="184" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="以及推薦的品項" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Nz-YD-R23">
+                                <rect key="frame" x="115.5" y="432" width="143" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="三餐的其中一種" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ir-le-Ytw">
+                                <rect key="frame" x="108" y="306" width="158" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ity-PA-Rvn" firstAttribute="leading" secondItem="gx6-8B-fQY" secondAttribute="leading" id="0SJ-M7-aLS"/>
+                            <constraint firstItem="7Nz-YD-R23" firstAttribute="top" secondItem="dEV-GQ-coE" secondAttribute="bottom" constant="38" id="988-ni-VYy"/>
+                            <constraint firstItem="8Ir-le-Ytw" firstAttribute="centerX" secondItem="dEV-GQ-coE" secondAttribute="centerX" id="98i-II-t08"/>
+                            <constraint firstItem="8Ir-le-Ytw" firstAttribute="centerX" secondItem="mkS-4x-AHg" secondAttribute="centerX" id="D0G-vP-UIg"/>
+                            <constraint firstItem="xxh-GL-sFI" firstAttribute="top" secondItem="7Nz-YD-R23" secondAttribute="bottom" constant="48" id="DvO-DX-L3a"/>
+                            <constraint firstItem="ity-PA-Rvn" firstAttribute="bottom" secondItem="wAL-pA-FLi" secondAttribute="top" id="LyD-fb-3QA"/>
+                            <constraint firstItem="8Ir-le-Ytw" firstAttribute="leading" secondItem="gx6-8B-fQY" secondAttribute="leadingMargin" constant="92" id="QMn-Ly-Qg3"/>
+                            <constraint firstItem="ity-PA-Rvn" firstAttribute="centerY" secondItem="8Ir-le-Ytw" secondAttribute="centerY" id="b8E-Ox-UqD"/>
+                            <constraint firstItem="mkS-4x-AHg" firstAttribute="top" secondItem="B6B-GJ-BgS" secondAttribute="bottom" constant="173" id="kqq-xa-Pvc"/>
+                            <constraint firstItem="ity-PA-Rvn" firstAttribute="centerX" secondItem="sEG-1s-XtU" secondAttribute="centerX" id="ljH-ox-Od1"/>
+                            <constraint firstItem="dEV-GQ-coE" firstAttribute="centerX" secondItem="7Nz-YD-R23" secondAttribute="centerX" id="m2O-j4-bbs"/>
+                            <constraint firstItem="sEG-1s-XtU" firstAttribute="top" secondItem="mkS-4x-AHg" secondAttribute="bottom" constant="32" id="o4W-a6-2Qs"/>
+                            <constraint firstItem="dEV-GQ-coE" firstAttribute="top" secondItem="8Ir-le-Ytw" secondAttribute="bottom" constant="40" id="qGk-Bt-Lfe"/>
+                            <constraint firstItem="sEG-1s-XtU" firstAttribute="centerX" secondItem="8Ir-le-Ytw" secondAttribute="centerX" id="r2g-ra-2E2"/>
+                            <constraint firstItem="ity-PA-Rvn" firstAttribute="top" secondItem="gx6-8B-fQY" secondAttribute="topMargin" constant="-31" id="s6J-ga-Lts"/>
+                            <constraint firstItem="dEV-GQ-coE" firstAttribute="trailing" secondItem="xxh-GL-sFI" secondAttribute="trailing" id="tU1-04-3fj"/>
+                            <constraint firstItem="mkS-4x-AHg" firstAttribute="centerX" secondItem="gx6-8B-fQY" secondAttribute="centerX" id="vnX-3r-6aY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cgs-Z3-bZF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1124" y="1137.481259370315"/>
+        </scene>
+        <!--3-->
+        <scene sceneID="rja-lS-vu4">
+            <objects>
+                <viewController storyboardIdentifier="Page3" title="3" id="SI0-Kd-qFZ" customClass="ViewController" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UtW-im-rSv"/>
+                        <viewControllerLayoutGuide type="bottom" id="vxz-fq-eyh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5oZ-1N-GYf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Agi-qo-7Pv">
+                                <rect key="frame" x="149.5" y="499" width="77" height="30"/>
+                                <state key="normal" title="去看看吧！">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEX-He-bjw">
+                                <rect key="frame" x="94" y="420" width="97" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="去看看吧！">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Page3" translatesAutoresizingMaskIntoConstraints="NO" id="oRA-h5-LKK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkp-J6-c5u">
+                                <rect key="frame" x="136.5" y="537" width="102" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="c47-aj-o3d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="去看看吧！">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Alc-RH-Lt2" kind="show" id="EgC-RB-VQX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oRA-h5-LKK" firstAttribute="leading" secondItem="5oZ-1N-GYf" secondAttribute="leading" id="61u-UN-1Pg"/>
+                            <constraint firstItem="Rkp-J6-c5u" firstAttribute="centerX" secondItem="5oZ-1N-GYf" secondAttribute="centerX" id="8Eq-kN-ODO"/>
+                            <constraint firstItem="oRA-h5-LKK" firstAttribute="centerX" secondItem="Agi-qo-7Pv" secondAttribute="centerX" id="C30-nT-XQF"/>
+                            <constraint firstItem="oRA-h5-LKK" firstAttribute="bottom" secondItem="vxz-fq-eyh" secondAttribute="top" id="JKO-ug-Mzq"/>
+                            <constraint firstItem="vxz-fq-eyh" firstAttribute="top" secondItem="Rkp-J6-c5u" secondAttribute="bottom" constant="94" id="QlE-Pi-Ucm"/>
+                            <constraint firstItem="oRA-h5-LKK" firstAttribute="top" secondItem="5oZ-1N-GYf" secondAttribute="top" id="lv0-jb-LWV"/>
+                            <constraint firstItem="Rkp-J6-c5u" firstAttribute="top" secondItem="Agi-qo-7Pv" secondAttribute="bottom" constant="8" symbolic="YES" id="oPG-TG-9aa"/>
+                            <constraint firstItem="Rkp-J6-c5u" firstAttribute="centerX" secondItem="Agi-qo-7Pv" secondAttribute="centerX" id="uzi-Rt-iqA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1hm-bM-XDs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1119" y="1805"/>
+        </scene>
+        <!--設定-->
+        <scene sceneID="nUU-OR-Rpq">
+            <objects>
+                <tableViewController id="fkw-Ed-E5m" customClass="SettingTableViewController" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="95" sectionHeaderHeight="28" sectionFooterHeight="28" id="xkS-fM-zbk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="5vc-a2-3oS">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="95" id="c1T-VZ-C6Y">
+                                <rect key="frame" x="0.0" y="72" width="375" height="95"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c1T-VZ-C6Y" id="94X-Aq-KM1">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fkw-Ed-E5m" id="6dG-7b-xeh"/>
+                            <outlet property="delegate" destination="fkw-Ed-E5m" id="Av6-4y-Gra"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="設定" id="f74-pN-0QM"/>
+                    <connections>
+                        <outlet property="searchBar" destination="5vc-a2-3oS" id="aMU-M8-zJE"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0v7-b3-Wac" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1610" y="1550"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Hng-MB-7hy">
+            <objects>
+                <viewController storyboardIdentifier="a" id="rnv-02-OdZ" customClass="ViewController" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jvq-V1-gEk"/>
+                        <viewControllerLayoutGuide type="bottom" id="AnP-Ea-ed0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1hh-4y-jf7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cZ-Qi-uzd">
+                                <rect key="frame" x="166" y="20" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zPU-3B-ISA">
+                                <rect key="frame" x="16" y="129" width="343" height="353"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">這個App能夠在你不知道要吃什麼東西的時候推薦你可以吃啥．只要按下你等等要吃的三餐的其中一種，他就會直接跳出圖片以及推薦的品項，請好好利用它吧！
+
+This app can help you if you don't know what to eat.You can push three button(it mean breakfast lunch dinner)
+The app will show the recommended food to you.
+Please enjoy it!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QD1-zM-28Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2289" y="1549"/>
+        </scene>
+        <!--City-->
+        <scene sceneID="CFG-vo-20X">
+            <objects>
+                <tableViewController storyboardIdentifier="c" id="qU7-7k-4Ex" customClass="City" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="69" sectionHeaderHeight="28" sectionFooterHeight="28" id="3ii-vD-43B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="citycell" rowHeight="69" id="Ch3-57-Tna" customClass="CityCell" customModule="三餐選擇器" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="69"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ch3-57-Tna" id="7wV-Bf-Aya">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="68"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="qU7-7k-4Ex" id="PI8-0s-VHg"/>
+                            <outlet property="delegate" destination="qU7-7k-4Ex" id="sim-H2-BKK"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5LB-TF-99C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3834" y="1549"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6YM-rF-4sp">
+            <objects>
+                <viewController storyboardIdentifier="b" id="7gY-7C-Vmi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yQh-ib-ERm"/>
+                        <viewControllerLayoutGuide type="bottom" id="h7z-X3-dte"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h3G-g1-prs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gF-TK-qLi" customClass="launchScreenView" customModule="三餐選擇器" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5gF-TK-qLi" secondAttribute="trailing" id="MFg-2v-KOT"/>
+                            <constraint firstItem="5gF-TK-qLi" firstAttribute="bottom" secondItem="h7z-X3-dte" secondAttribute="top" id="gGg-xK-zzY"/>
+                            <constraint firstItem="5gF-TK-qLi" firstAttribute="leading" secondItem="h3G-g1-prs" secondAttribute="leading" id="wAw-bT-Tpq"/>
+                            <constraint firstItem="5gF-TK-qLi" firstAttribute="top" secondItem="h3G-g1-prs" secondAttribute="top" id="xPz-Se-Dup"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hpz-1P-WEa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3055" y="1549"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gTh-93-PMf">
+            <objects>
+                <viewController storyboardIdentifier="d" id="t7N-3v-Ens" customClass="ViewController" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hhh-vm-j7s"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y1j-LL-Q9S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SUU-cn-iou">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="4we-Ld-gCT">
+                                <rect key="frame" x="27.5" y="225.5" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="515231951.12142998">
+                                    <!--2017-04-30 07:59:11 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TiM-as-2lF">
+                                <rect key="frame" x="95.5" y="105.5" width="184" height="30"/>
+                                <state key="normal" title="選好時間按下後就會通知你"/>
+                                <connections>
+                                    <action selector="notificationButton:" destination="t7N-3v-Ens" eventType="touchUpInside" id="i0W-h6-PC5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2Z-YC-bJi">
+                                <rect key="frame" x="111" y="149.5" width="153" height="30"/>
+                                <state key="normal" title="按下之後就不會通知你"/>
+                                <connections>
+                                    <action selector="noNotification:" destination="t7N-3v-Ens" eventType="touchUpInside" id="djH-tp-Eve"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4we-Ld-gCT" firstAttribute="top" secondItem="n2Z-YC-bJi" secondAttribute="bottom" constant="46" id="1XX-LS-mWu"/>
+                            <constraint firstItem="TiM-as-2lF" firstAttribute="centerX" secondItem="SUU-cn-iou" secondAttribute="centerX" id="4AP-7c-wKy"/>
+                            <constraint firstItem="4we-Ld-gCT" firstAttribute="centerX" secondItem="SUU-cn-iou" secondAttribute="centerX" id="4pd-61-Hm8"/>
+                            <constraint firstItem="4we-Ld-gCT" firstAttribute="top" secondItem="TiM-as-2lF" secondAttribute="bottom" constant="90" id="518-1F-quy"/>
+                            <constraint firstItem="4we-Ld-gCT" firstAttribute="centerX" secondItem="TiM-as-2lF" secondAttribute="centerX" id="aeO-DT-w2P"/>
+                            <constraint firstItem="4we-Ld-gCT" firstAttribute="centerY" secondItem="SUU-cn-iou" secondAttribute="centerY" id="dg9-R1-KqR"/>
+                            <constraint firstItem="n2Z-YC-bJi" firstAttribute="centerX" secondItem="SUU-cn-iou" secondAttribute="centerX" id="qeZ-ko-WLE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="4we-Ld-gCT" id="0Nb-Zu-rtA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CkU-PU-DZr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4594" y="1549"/>
+        </scene>
+        <!--餐點選擇-->
+        <scene sceneID="tQx-1m-9sL">
+            <objects>
+                <viewController storyboardIdentifier="FoodChoicePage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5hb-gX-Q2X" customClass="ViewController" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="twS-zm-oMn"/>
+                        <viewControllerLayoutGuide type="bottom" id="4xM-7P-1Hl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vfi-Gc-xsd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eyd-VZ-8Ls">
+                                <rect key="frame" x="256" y="99" width="84" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="dinner"/>
+                                <state key="normal" title="晚餐" image="晚餐"/>
+                                <connections>
+                                    <action selector="dinner:" destination="5hb-gX-Q2X" eventType="touchUpInside" id="yfh-jc-reS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5A-po-OVp">
+                                <rect key="frame" x="37" y="99" width="84" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="breakfast"/>
+                                <state key="normal" title="早餐" image="早餐"/>
+                                <connections>
+                                    <action selector="breakFast:" destination="5hb-gX-Q2X" eventType="touchUpInside" id="2oK-2W-koQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="你可以吃：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFk-tu-jc9">
+                                <rect key="frame" x="144" y="179" width="86" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="按下你想吃的那餐吧!" translatesAutoresizingMaskIntoConstraints="NO" id="AWs-w0-WNA">
+                                <rect key="frame" x="71" y="222" width="235" height="251"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="你可以吃：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVp-xC-wdq">
+                                <rect key="frame" x="58" y="169" width="263" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" fixedFrame="YES" text="選擇你要吃的種類：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ej4-hT-roy">
+                                <rect key="frame" x="51" y="44" width="289" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FiL-in-ZH1">
+                                <rect key="frame" x="150" y="99" width="79" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="lunch"/>
+                                <state key="normal" title="午餐" image="午餐"/>
+                                <connections>
+                                    <action selector="lunch:" destination="5hb-gX-Q2X" eventType="touchUpInside" id="P4c-da-Rrl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="餐點選擇" id="Jtk-M3-gUU"/>
+                    <connections>
+                        <outlet property="meal" destination="bVp-xC-wdq" id="7VA-kA-sIK"/>
+                        <outlet property="mealPhoto" destination="AWs-w0-WNA" id="hiT-S6-02s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qQ6-Yi-rfw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="607" y="445"/>
+        </scene>
+        <!--My Tab Bar-->
+        <scene sceneID="mbU-nx-g1U">
+            <objects>
+                <tabBarController storyboardIdentifier="myTabBar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AmO-QZ-fDf" customClass="myTabBar" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="qEa-Rl-cHR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="TabBarController" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="5hb-gX-Q2X" kind="relationship" relationship="viewControllers" id="VGj-ID-q7D"/>
+                        <segue destination="3V1-Og-cjL" kind="relationship" relationship="viewControllers" id="A0T-Yg-O2u"/>
+                        <segue destination="CNa-CC-6bK" kind="relationship" relationship="viewControllers" id="621-Ze-Ac7"/>
+                        <segue destination="sq8-i6-85v" kind="relationship" relationship="viewControllers" id="oHA-hP-9Hu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mQd-nu-TkT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-219" y="1900"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="X81-Vq-FoM">
+            <objects>
+                <viewController id="kyE-8z-Dby" customClass="ViewController" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M4J-Ke-kKC"/>
+                        <viewControllerLayoutGuide type="bottom" id="bOo-Fk-YzI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uWK-vh-4m0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VpE-Qn-iza">
+                                <rect key="frame" x="56" y="131" width="240" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjV-mC-Ytt">
+                                <rect key="frame" x="66" y="426" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="取用相機"/>
+                                <connections>
+                                    <action selector="openCameraButton:" destination="kyE-8z-Dby" eventType="touchUpInside" id="Lhy-3s-SxW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNc-s9-Et3">
+                                <rect key="frame" x="194" y="426" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="從相簿取得"/>
+                                <connections>
+                                    <action selector="openPhotoLibraryButton:" destination="kyE-8z-Dby" eventType="touchUpInside" id="NRV-BN-9Iq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MTZ-2A-Xtl">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="6pe-BD-zNw">
+                            <connections>
+                                <action selector="backToTabBar:" destination="kyE-8z-Dby" id="8ZI-VF-PUJ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="wWA-2p-fhh">
+                            <connections>
+                                <action selector="saveButton:" destination="kyE-8z-Dby" id="4sC-mE-3fg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imagePicked" destination="VpE-Qn-iza" id="y4H-oq-pX0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mke-2u-K34" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1935" y="2448"/>
+        </scene>
+        <!--登出-->
+        <scene sceneID="jMW-FX-JVO">
+            <objects>
+                <viewController id="sq8-i6-85v" customClass="ViewController" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tGm-E9-UyK"/>
+                        <viewControllerLayoutGuide type="bottom" id="SXS-Nt-ZmQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DbQ-Dw-faI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFr-26-GM8">
+                                <rect key="frame" x="124.5" y="184" width="126" height="40"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="logout"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eKD-qE-gO8"/>
+                                    <constraint firstAttribute="width" constant="126" id="s1q-F0-HmH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="登出"/>
+                                <connections>
+                                    <segue destination="Alc-RH-Lt2" kind="show" id="Kmr-3v-Z50"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="確定要登出嗎？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRJ-nT-deB">
+                                <rect key="frame" x="76" y="129" width="223" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8C-xF-4Ax">
+                                <rect key="frame" x="135.5" y="288" width="104" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="傳送意見給我">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendEmailToMe:" destination="sq8-i6-85v" eventType="touchUpInside" id="4Uw-YG-Js0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="T8C-xF-4Ax" firstAttribute="top" secondItem="FFr-26-GM8" secondAttribute="bottom" constant="64" id="2Fc-0P-qdB"/>
+                            <constraint firstItem="FFr-26-GM8" firstAttribute="top" secondItem="LRJ-nT-deB" secondAttribute="bottom" constant="31" id="FgO-6j-qQW"/>
+                            <constraint firstItem="LRJ-nT-deB" firstAttribute="leading" secondItem="DbQ-Dw-faI" secondAttribute="leadingMargin" constant="60" id="SOa-Xf-TaD"/>
+                            <constraint firstItem="LRJ-nT-deB" firstAttribute="top" secondItem="tGm-E9-UyK" secondAttribute="bottom" constant="109" id="b8Z-96-fxY"/>
+                            <constraint firstItem="LRJ-nT-deB" firstAttribute="centerX" secondItem="DbQ-Dw-faI" secondAttribute="centerX" id="dmQ-X7-29j"/>
+                            <constraint firstItem="FFr-26-GM8" firstAttribute="centerX" secondItem="T8C-xF-4Ax" secondAttribute="centerX" id="oKO-GQ-GuL"/>
+                            <constraint firstItem="LRJ-nT-deB" firstAttribute="centerX" secondItem="FFr-26-GM8" secondAttribute="centerX" id="w7F-qu-aGU"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="登出" id="2U7-EE-3bW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jsw-ag-9NE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-204" y="475"/>
+        </scene>
+        <!--我的設定-->
+        <scene sceneID="sPY-8n-eTD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CNa-CC-6bK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的設定" id="xin-qT-u9K"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lz0-vk-bw7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fkw-Ed-E5m" kind="relationship" relationship="rootViewController" id="7Cn-LH-zoU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b5I-jE-qIi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="606" y="1218"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3SR-UQ-VBQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ncl-3h-6mt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="khh-f1-eF4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MB7-tW-qsy" kind="relationship" relationship="rootViewController" id="jxj-C6-lei"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f97-Rg-8w9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2996" y="2409"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="V7R-l2-Alr">
+            <objects>
+                <viewController storyboardIdentifier="e" id="MB7-tW-qsy" customClass="ViewController" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rgn-V9-6c8"/>
+                        <viewControllerLayoutGuide type="bottom" id="oEX-GV-tib"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cz8-rf-9sF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="95" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tW8-pY-Ajd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="95" id="uc4-ek-umy">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uc4-ek-umy" id="UFg-38-fFQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="MB7-tW-qsy" id="IKj-5l-Afy"/>
+                                    <outlet property="delegate" destination="MB7-tW-qsy" id="vgi-4c-M0E"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tW8-pY-Ajd" firstAttribute="bottom" secondItem="oEX-GV-tib" secondAttribute="top" id="43F-3b-TYh"/>
+                            <constraint firstItem="tW8-pY-Ajd" firstAttribute="leading" secondItem="cz8-rf-9sF" secondAttribute="leading" id="Opo-tE-K36"/>
+                            <constraint firstItem="tW8-pY-Ajd" firstAttribute="top" secondItem="cz8-rf-9sF" secondAttribute="top" id="VI2-cP-Xmv"/>
+                            <constraint firstAttribute="trailing" secondItem="tW8-pY-Ajd" secondAttribute="trailing" id="aFA-Rf-3r7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ksw-gE-PYF">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="oNq-MD-uXZ">
+                            <connections>
+                                <action selector="addName:" destination="MB7-tW-qsy" id="TfT-Dx-qcz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="tW8-pY-Ajd" id="vZw-8Q-7dA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bsa-8P-gZq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3961" y="2409"/>
+        </scene>
+        <!--Web Kit View Controller-->
+        <scene sceneID="702-n2-EZ6">
+            <objects>
+                <viewController storyboardIdentifier="f" id="5k7-KX-6o4" customClass="WebKitViewController" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mAf-Vj-CM4"/>
+                        <viewControllerLayoutGuide type="bottom" id="jCy-x0-jji"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rrh-2H-nNn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nCy-fG-9KK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2996" y="3138"/>
+        </scene>
+        <!--照相機-->
+        <scene sceneID="aUJ-zf-Z3e">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3V1-Og-cjL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="照相機" id="mgw-VF-AJc"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5fx-fL-l6b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kyE-8z-Dby" kind="relationship" relationship="rootViewController" id="Rkb-zf-XPd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OV3-8T-oxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="746" y="2314"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Page1" width="1242" height="2208"/>
+        <image name="Page2" width="1080" height="1920"/>
+        <image name="Page3" width="744" height="1392"/>
+        <image name="午餐" width="181" height="77"/>
+        <image name="按下你想吃的那餐吧!" width="399" height="399"/>
+        <image name="早餐" width="181" height="77"/>
+        <image name="晚餐" width="181" height="77"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Kmr-3v-Z50"/>
+    </inferredMetricsTieBreakers>
+</document>
