@@ -55,12 +55,12 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>需要取用相機</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>記得要打開位置資訊這樣我才能幫你找到你要的餐廳喔！</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>需要你的相片存取權才能執行更多功能喔！</string>
-	<key>NSCameraUsageDescription</key>
-	<string>需要取用相機</string>
 	<key>UILaunchStoryboardName</key>
 	<string>MyLaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

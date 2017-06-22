@@ -10,50 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="Nyy-lm-F8u">
-            <objects>
-                <viewController storyboardIdentifier="startPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Alc-RH-Lt2" customClass="ViewController" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Gk2-fs-AXY"/>
-                        <viewControllerLayoutGuide type="bottom" id="4c1-ln-2Lw"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="5mJ-be-1mN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7I-HZ-6Fd" customClass="FBSDKLoginButton">
-                                <rect key="frame" x="67" y="232" width="240" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Facebook"/>
-                                <connections>
-                                    <action selector="onClickLoginWithFacebook:" destination="Alc-RH-Lt2" eventType="touchUpInside" id="Jz2-PP-tqV"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deG-cE-IuC">
-                                <rect key="frame" x="107" y="315" width="159" height="36"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <accessibility key="accessibilityConfiguration" label="justgo"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="直接去看看！"/>
-                                <connections>
-                                    <segue destination="AmO-QZ-fDf" kind="show" id="QWh-TW-boK"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oLg-bx-4pv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-204" y="1138"/>
-        </scene>
         <!--Page View Controller-->
         <scene sceneID="tJ0-Ky-Huz">
             <objects>
-                <pageViewController storyboardIdentifier="MyPageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="gW6-Fd-vgK" customClass="PageViewController" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="MyPageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="gW6-Fd-vgK" customClass="PageViewController" customModule="_5645646" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qC5-Ua-YTg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2083" y="445"/>
@@ -61,7 +21,7 @@
         <!--View Controller-->
         <scene sceneID="aR7-aF-8ME">
             <objects>
-                <viewController storyboardIdentifier="Page1" id="Snt-fL-5UI" customClass="ViewController" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Page1" id="Snt-fL-5UI" customClass="ViewController" customModule="_5645646" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="soN-vm-fYU"/>
                         <viewControllerLayoutGuide type="bottom" id="09r-lm-QaJ"/>
@@ -132,7 +92,7 @@
         <!--View Controller-->
         <scene sceneID="8jS-EN-Fka">
             <objects>
-                <viewController storyboardIdentifier="Page2" id="gZw-fh-IsF" customClass="ViewController" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Page2" id="gZw-fh-IsF" customClass="ViewController" customModule="_5645646" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="B6B-GJ-BgS"/>
                         <viewControllerLayoutGuide type="bottom" id="wAL-pA-FLi"/>
@@ -213,7 +173,7 @@
         <!--3-->
         <scene sceneID="rja-lS-vu4">
             <objects>
-                <viewController storyboardIdentifier="Page3" title="3" id="SI0-Kd-qFZ" customClass="ViewController" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Page3" title="3" id="SI0-Kd-qFZ" customClass="ViewController" customModule="_5645646" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UtW-im-rSv"/>
                         <viewControllerLayoutGuide type="bottom" id="vxz-fq-eyh"/>
@@ -249,7 +209,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Alc-RH-Lt2" kind="show" id="EgC-RB-VQX"/>
+                                    <segue destination="AmO-QZ-fDf" kind="show" id="2WH-2e-Yh8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -273,7 +233,7 @@
         <!--設定-->
         <scene sceneID="nUU-OR-Rpq">
             <objects>
-                <tableViewController id="fkw-Ed-E5m" customClass="SettingTableViewController" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="fkw-Ed-E5m" customClass="SettingTableViewController" customModule="_5645646" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="95" sectionHeaderHeight="28" sectionFooterHeight="28" id="xkS-fM-zbk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -310,7 +270,7 @@
         <!--View Controller-->
         <scene sceneID="Hng-MB-7hy">
             <objects>
-                <viewController storyboardIdentifier="a" id="rnv-02-OdZ" customClass="ViewController" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="a" id="rnv-02-OdZ" customClass="ViewController" customModule="_5645646" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jvq-V1-gEk"/>
                         <viewControllerLayoutGuide type="bottom" id="AnP-Ea-ed0"/>
@@ -349,13 +309,13 @@ Please enjoy it!</string>
         <!--City-->
         <scene sceneID="CFG-vo-20X">
             <objects>
-                <tableViewController storyboardIdentifier="c" id="qU7-7k-4Ex" customClass="City" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="c" id="qU7-7k-4Ex" customClass="City" customModule="_5645646" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="69" sectionHeaderHeight="28" sectionFooterHeight="28" id="3ii-vD-43B">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="citycell" rowHeight="69" id="Ch3-57-Tna" customClass="CityCell" customModule="三餐選擇器" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="citycell" rowHeight="69" id="Ch3-57-Tna" customClass="CityCell" customModule="_5645646" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="69"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ch3-57-Tna" id="7wV-Bf-Aya">
@@ -387,7 +347,7 @@ Please enjoy it!</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gF-TK-qLi" customClass="launchScreenView" customModule="三餐選擇器" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gF-TK-qLi" customClass="launchScreenView" customModule="_5645646" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -408,7 +368,7 @@ Please enjoy it!</string>
         <!--View Controller-->
         <scene sceneID="gTh-93-PMf">
             <objects>
-                <viewController storyboardIdentifier="d" id="t7N-3v-Ens" customClass="ViewController" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="d" id="t7N-3v-Ens" customClass="ViewController" customModule="_5645646" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Hhh-vm-j7s"/>
                         <viewControllerLayoutGuide type="bottom" id="Y1j-LL-Q9S"/>
@@ -460,7 +420,7 @@ Please enjoy it!</string>
         <!--餐點選擇-->
         <scene sceneID="tQx-1m-9sL">
             <objects>
-                <viewController storyboardIdentifier="FoodChoicePage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5hb-gX-Q2X" customClass="ViewController" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FoodChoicePage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5hb-gX-Q2X" customClass="ViewController" customModule="_5645646" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="twS-zm-oMn"/>
                         <viewControllerLayoutGuide type="bottom" id="4xM-7P-1Hl"/>
@@ -537,7 +497,7 @@ Please enjoy it!</string>
         <!--My Tab Bar-->
         <scene sceneID="mbU-nx-g1U">
             <objects>
-                <tabBarController storyboardIdentifier="myTabBar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AmO-QZ-fDf" customClass="myTabBar" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="myTabBar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AmO-QZ-fDf" customClass="myTabBar" customModule="_5645646" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="qEa-Rl-cHR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -560,7 +520,7 @@ Please enjoy it!</string>
         <!--View Controller-->
         <scene sceneID="X81-Vq-FoM">
             <objects>
-                <viewController id="kyE-8z-Dby" customClass="ViewController" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kyE-8z-Dby" customClass="ViewController" customModule="_5645646" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="M4J-Ke-kKC"/>
                         <viewControllerLayoutGuide type="bottom" id="bOo-Fk-YzI"/>
@@ -612,10 +572,10 @@ Please enjoy it!</string>
             </objects>
             <point key="canvasLocation" x="1935" y="2448"/>
         </scene>
-        <!--登出-->
+        <!--其他-->
         <scene sceneID="jMW-FX-JVO">
             <objects>
-                <viewController id="sq8-i6-85v" customClass="ViewController" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sq8-i6-85v" customClass="ViewController" customModule="_5645646" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tGm-E9-UyK"/>
                         <viewControllerLayoutGuide type="bottom" id="SXS-Nt-ZmQ"/>
@@ -624,28 +584,9 @@ Please enjoy it!</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFr-26-GM8">
-                                <rect key="frame" x="124.5" y="184" width="126" height="40"/>
-                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <accessibility key="accessibilityConfiguration" label="logout"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="eKD-qE-gO8"/>
-                                    <constraint firstAttribute="width" constant="126" id="s1q-F0-HmH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="登出"/>
-                                <connections>
-                                    <segue destination="Alc-RH-Lt2" kind="show" id="Kmr-3v-Z50"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="確定要登出嗎？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRJ-nT-deB">
-                                <rect key="frame" x="76" y="129" width="223" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8C-xF-4Ax">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8C-xF-4Ax">
                                 <rect key="frame" x="135.5" y="288" width="104" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="傳送意見給我">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -656,21 +597,12 @@ Please enjoy it!</string>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="T8C-xF-4Ax" firstAttribute="top" secondItem="FFr-26-GM8" secondAttribute="bottom" constant="64" id="2Fc-0P-qdB"/>
-                            <constraint firstItem="FFr-26-GM8" firstAttribute="top" secondItem="LRJ-nT-deB" secondAttribute="bottom" constant="31" id="FgO-6j-qQW"/>
-                            <constraint firstItem="LRJ-nT-deB" firstAttribute="leading" secondItem="DbQ-Dw-faI" secondAttribute="leadingMargin" constant="60" id="SOa-Xf-TaD"/>
-                            <constraint firstItem="LRJ-nT-deB" firstAttribute="top" secondItem="tGm-E9-UyK" secondAttribute="bottom" constant="109" id="b8Z-96-fxY"/>
-                            <constraint firstItem="LRJ-nT-deB" firstAttribute="centerX" secondItem="DbQ-Dw-faI" secondAttribute="centerX" id="dmQ-X7-29j"/>
-                            <constraint firstItem="FFr-26-GM8" firstAttribute="centerX" secondItem="T8C-xF-4Ax" secondAttribute="centerX" id="oKO-GQ-GuL"/>
-                            <constraint firstItem="LRJ-nT-deB" firstAttribute="centerX" secondItem="FFr-26-GM8" secondAttribute="centerX" id="w7F-qu-aGU"/>
-                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="登出" id="2U7-EE-3bW"/>
+                    <tabBarItem key="tabBarItem" title="其他" id="2U7-EE-3bW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jsw-ag-9NE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-204" y="475"/>
+            <point key="canvasLocation" x="-287" y="874"/>
         </scene>
         <!--我的設定-->
         <scene sceneID="sPY-8n-eTD">
@@ -712,7 +644,7 @@ Please enjoy it!</string>
         <!--View Controller-->
         <scene sceneID="V7R-l2-Alr">
             <objects>
-                <viewController storyboardIdentifier="e" id="MB7-tW-qsy" customClass="ViewController" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="e" id="MB7-tW-qsy" customClass="ViewController" customModule="_5645646" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rgn-V9-6c8"/>
                         <viewControllerLayoutGuide type="bottom" id="oEX-GV-tib"/>
@@ -766,7 +698,7 @@ Please enjoy it!</string>
         <!--Web Kit View Controller-->
         <scene sceneID="702-n2-EZ6">
             <objects>
-                <viewController storyboardIdentifier="f" id="5k7-KX-6o4" customClass="WebKitViewController" customModule="三餐選擇器" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="f" id="5k7-KX-6o4" customClass="WebKitViewController" customModule="_5645646" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mAf-Vj-CM4"/>
                         <viewControllerLayoutGuide type="bottom" id="jCy-x0-jji"/>
@@ -810,7 +742,4 @@ Please enjoy it!</string>
         <image name="早餐" width="181" height="77"/>
         <image name="晚餐" width="181" height="77"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Kmr-3v-Z50"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -3,7 +3,7 @@ import UIKit
 import CoreData
 import UserNotifications
 import FirebaseCore
-import FBSDKCoreKit
+
 
 
 
@@ -25,10 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
          
      
-        //Facebook
-        FirebaseApp.configure()
-        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
-       
+              
       
                 return true
     }
@@ -37,13 +34,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         
       
-        
-        //Facebook
-        let handled = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, options: options)
-        
-        FBSDKApplicationDelegate.sharedInstance().application(app, open: url, options: options)
-        
-        return handled
+      
+      return true
     }
     
 
