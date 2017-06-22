@@ -22,10 +22,14 @@
 		1FFD55441EFBECD3001783EC /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD55431EFBECD3001783EC /* PageViewController.swift */; };
 		1FFD55461EFBECDB001783EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1FFD55451EFBECDB001783EC /* GoogleService-Info.plist */; };
 		1FFD55481EFBED09001783EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD55471EFBED09001783EC /* ViewController.swift */; };
-		1FFD554B1EFBEDDD001783EC /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFD554A1EFBEDDD001783EC /* FirebaseCore.framework */; };
-		1FFD554D1EFBEE20001783EC /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFD554C1EFBEE1F001783EC /* FBSDKLoginKit.framework */; };
-		1FFD554F1EFBEE48001783EC /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFD554E1EFBEE48001783EC /* FBSDKCoreKit.framework */; };
-		1FFD55511EFBEE82001783EC /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFD55501EFBEE82001783EC /* FirebaseAuth.framework */; };
+		1FFD55561EFBF295001783EC /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFD55551EFBF295001783EC /* libsqlite3.tbd */; };
+		1FFD55581EFBF2A4001783EC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFD55571EFBF2A4001783EC /* libz.tbd */; };
+		1FFD555A1EFBF2B1001783EC /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFD55591EFBF2B1001783EC /* libc++.tbd */; };
+		1FFD555C1EFBF3DF001783EC /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFD555B1EFBF3DF001783EC /* Bolts.framework */; };
+		1FFD555E1EFBF3F0001783EC /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFD555D1EFBF3F0001783EC /* FBSDKCoreKit.framework */; };
+		1FFD55601EFBF3F7001783EC /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFD555F1EFBF3F7001783EC /* FBSDKLoginKit.framework */; };
+		1FFD55621EFBF3FC001783EC /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFD55611EFBF3FC001783EC /* FirebaseAuth.framework */; };
+		1FFD55641EFBF403001783EC /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFD55631EFBF403001783EC /* FirebaseCore.framework */; };
 		1FFE41A41EFBAE2E0049B005 /* _5645646Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE41A31EFBAE2E0049B005 /* _5645646Tests.swift */; };
 		1FFE41AF1EFBAE2E0049B005 /* _5645646UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE41AE1EFBAE2E0049B005 /* _5645646UITests.swift */; };
 		1FFE41BD1EFBAE400049B005 /* RAMAnimatedTabBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFE41BC1EFBAE400049B005 /* RAMAnimatedTabBarController.framework */; };
@@ -80,10 +84,14 @@
 		1FFD55431EFBECD3001783EC /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		1FFD55451EFBECDB001783EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1FFD55471EFBED09001783EC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1FFD554A1EFBEDDD001783EC /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
-		1FFD554C1EFBEE1F001783EC /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		1FFD554E1EFBEE48001783EC /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		1FFD55501EFBEE82001783EC /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = "<group>"; };
+		1FFD55551EFBF295001783EC /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		1FFD55571EFBF2A4001783EC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		1FFD55591EFBF2B1001783EC /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		1FFD555B1EFBF3DF001783EC /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		1FFD555D1EFBF3F0001783EC /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		1FFD555F1EFBF3F7001783EC /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		1FFD55611EFBF3FC001783EC /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = "<group>"; };
+		1FFD55631EFBF403001783EC /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
 		1FFE418B1EFBAE2E0049B005 /* 45645646.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 45645646.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FFE419F1EFBAE2E0049B005 /* 45645646Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 45645646Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FFE41A31EFBAE2E0049B005 /* _5645646Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _5645646Tests.swift; sourceTree = "<group>"; };
@@ -99,12 +107,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FFD554F1EFBEE48001783EC /* FBSDKCoreKit.framework in Frameworks */,
+				1FFD55621EFBF3FC001783EC /* FirebaseAuth.framework in Frameworks */,
+				1FFD555A1EFBF2B1001783EC /* libc++.tbd in Frameworks */,
+				1FFD55581EFBF2A4001783EC /* libz.tbd in Frameworks */,
+				1FFD55561EFBF295001783EC /* libsqlite3.tbd in Frameworks */,
+				1FFD555C1EFBF3DF001783EC /* Bolts.framework in Frameworks */,
+				1FFD555E1EFBF3F0001783EC /* FBSDKCoreKit.framework in Frameworks */,
+				1FFD55641EFBF403001783EC /* FirebaseCore.framework in Frameworks */,
 				1FFE41BD1EFBAE400049B005 /* RAMAnimatedTabBarController.framework in Frameworks */,
+				1FFD55601EFBF3F7001783EC /* FBSDKLoginKit.framework in Frameworks */,
 				1FFD552C1EFBEA49001783EC /* Alamofire.framework in Frameworks */,
-				1FFD55511EFBEE82001783EC /* FirebaseAuth.framework in Frameworks */,
-				1FFD554D1EFBEE20001783EC /* FBSDKLoginKit.framework in Frameworks */,
-				1FFD554B1EFBEDDD001783EC /* FirebaseCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,14 +140,25 @@
 		1FFD55491EFBED34001783EC /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				1FFD55501EFBEE82001783EC /* FirebaseAuth.framework */,
-				1FFD554E1EFBEE48001783EC /* FBSDKCoreKit.framework */,
-				1FFD554C1EFBEE1F001783EC /* FBSDKLoginKit.framework */,
-				1FFD554A1EFBEDDD001783EC /* FirebaseCore.framework */,
+				1FFD55631EFBF403001783EC /* FirebaseCore.framework */,
+				1FFD55611EFBF3FC001783EC /* FirebaseAuth.framework */,
+				1FFD555F1EFBF3F7001783EC /* FBSDKLoginKit.framework */,
+				1FFD555D1EFBF3F0001783EC /* FBSDKCoreKit.framework */,
+				1FFD555B1EFBF3DF001783EC /* Bolts.framework */,
 				1FFD552B1EFBEA49001783EC /* Alamofire.framework */,
 				1FFE41BC1EFBAE400049B005 /* RAMAnimatedTabBarController.framework */,
 			);
 			name = Framework;
+			sourceTree = "<group>";
+		};
+		1FFD55541EFBF295001783EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FFD55591EFBF2B1001783EC /* libc++.tbd */,
+				1FFD55571EFBF2A4001783EC /* libz.tbd */,
+				1FFD55551EFBF295001783EC /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		1FFE41821EFBAE2E0049B005 = {
@@ -159,6 +182,7 @@
 				1FFE41A21EFBAE2E0049B005 /* 45645646Tests */,
 				1FFE41AD1EFBAE2E0049B005 /* 45645646UITests */,
 				1FFE418C1EFBAE2E0049B005 /* Products */,
+				1FFD55541EFBF295001783EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -494,6 +518,7 @@
 				);
 				INFOPLIST_FILE = 45645646/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "-65.-5645646";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -511,6 +536,8 @@
 				);
 				INFOPLIST_FILE = 45645646/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "-65.-5645646";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
