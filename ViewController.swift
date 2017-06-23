@@ -18,6 +18,7 @@ import FirebaseAuth
 
 
 
+
 class ViewController: UIViewController, UITextFieldDelegate,MFMailComposeViewControllerDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
 
@@ -35,8 +36,8 @@ class ViewController: UIViewController, UITextFieldDelegate,MFMailComposeViewCon
     override func viewDidLoad() {
       
         super.viewDidLoad()
-
-      
+        
+   
          
     }
     
@@ -247,10 +248,9 @@ class ViewController: UIViewController, UITextFieldDelegate,MFMailComposeViewCon
         }
  
     
+    //Alamofire
     
     
-    
-   
     
     
     

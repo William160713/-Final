@@ -111,7 +111,7 @@
                                 <rect key="frame" x="0.0" y="-31" width="374" height="698"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="請好好利用它吧！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxh-GL-sFI">
-                                <rect key="frame" x="114.5" y="504" width="164" height="21"/>
+                                <rect key="frame" x="114.5" y="504.5" width="164" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="8E2-dg-3ez"/>
                                 </constraints>
@@ -126,19 +126,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="他就會直接跳出圖片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEV-GQ-coE">
-                                <rect key="frame" x="94.5" y="370" width="184" height="24"/>
+                                <rect key="frame" x="94.5" y="370.5" width="184" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="以及推薦的品項" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Nz-YD-R23">
-                                <rect key="frame" x="115.5" y="432" width="143" height="24"/>
+                                <rect key="frame" x="115.5" y="432.5" width="143" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="三餐的其中一種" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ir-le-Ytw">
-                                <rect key="frame" x="108" y="306" width="158" height="24"/>
+                                <rect key="frame" x="108" y="306.5" width="158" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -529,7 +529,7 @@ Please enjoy it!</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VpE-Qn-iza">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="點選Save來 保存從你的相機 或是相簿" translatesAutoresizingMaskIntoConstraints="NO" id="VpE-Qn-iza">
                                 <rect key="frame" x="56" y="131" width="240" height="189"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -610,7 +610,7 @@ Please enjoy it!</string>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CNa-CC-6bK" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="我的設定" id="xin-qT-u9K"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lz0-vk-bw7">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Lz0-vk-bw7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -628,7 +628,7 @@ Please enjoy it!</string>
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ncl-3h-6mt" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="khh-f1-eF4">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="khh-f1-eF4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -713,13 +713,70 @@ Please enjoy it!</string>
             </objects>
             <point key="canvasLocation" x="2996" y="3138"/>
         </scene>
+        <!--Alamo Fire View Controller-->
+        <scene sceneID="QJ7-vO-XSU">
+            <objects>
+                <viewController storyboardIdentifier="h" id="Wo8-Da-Yzt" customClass="AlamoFireViewController" customModule="_5645646" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ja5-yI-ua5"/>
+                        <viewControllerLayoutGuide type="bottom" id="93y-ag-dwA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yuk-ja-dvb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w1x-I5-z3w">
+                                <rect key="frame" x="67" y="108" width="240" height="240"/>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DZy-A4-ahd">
+                                <rect key="frame" x="163" y="469" width="51" height="31"/>
+                                <connections>
+                                    <action selector="alamoFireSwitch:" destination="Wo8-Da-Yzt" eventType="valueChanged" id="HTy-xl-Gw6"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="打開開關開始下載照片" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kf-eV-nIu">
+                                <rect key="frame" x="88" y="537" width="204" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1KF-Ri-Qbv">
+                                <rect key="frame" x="115" y="422" width="150" height="2"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1KF-Ri-Qbv" firstAttribute="leading" secondItem="Yuk-ja-dvb" secondAttribute="leadingMargin" constant="99" id="4Nu-HG-wrK"/>
+                            <constraint firstItem="w1x-I5-z3w" firstAttribute="leading" secondItem="Yuk-ja-dvb" secondAttribute="leadingMargin" constant="51" id="DBN-xj-jI2"/>
+                            <constraint firstItem="w1x-I5-z3w" firstAttribute="centerX" secondItem="Yuk-ja-dvb" secondAttribute="centerX" id="IG0-in-xGn"/>
+                            <constraint firstItem="w1x-I5-z3w" firstAttribute="top" secondItem="ja5-yI-ua5" secondAttribute="bottom" constant="88" id="Mh0-ce-rQb"/>
+                            <constraint firstItem="2kf-eV-nIu" firstAttribute="leading" secondItem="Yuk-ja-dvb" secondAttribute="leadingMargin" constant="72" id="XRV-03-lsl"/>
+                            <constraint firstItem="1KF-Ri-Qbv" firstAttribute="centerX" secondItem="2kf-eV-nIu" secondAttribute="centerX" id="Y8Y-g5-so7"/>
+                            <constraint firstItem="1KF-Ri-Qbv" firstAttribute="top" secondItem="w1x-I5-z3w" secondAttribute="bottom" constant="74" id="gXg-lD-fCz"/>
+                            <constraint firstItem="2kf-eV-nIu" firstAttribute="top" secondItem="DZy-A4-ahd" secondAttribute="bottom" constant="37" id="gic-d4-76X"/>
+                            <constraint firstItem="DZy-A4-ahd" firstAttribute="top" secondItem="1KF-Ri-Qbv" secondAttribute="bottom" constant="45" id="iGC-X9-Sr6"/>
+                            <constraint firstItem="w1x-I5-z3w" firstAttribute="centerX" secondItem="DZy-A4-ahd" secondAttribute="centerX" id="t2L-LF-pZN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2kf-eV-nIu" secondAttribute="trailing" constant="67" id="ubF-Ix-4BW"/>
+                            <constraint firstItem="93y-ag-dwA" firstAttribute="top" secondItem="2kf-eV-nIu" secondAttribute="bottom" constant="109" id="wYK-a0-SoQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alamoFireImage" destination="w1x-I5-z3w" id="V5K-oC-yUt"/>
+                        <outlet property="alamoFireLabel" destination="2kf-eV-nIu" id="XPm-b1-32I"/>
+                        <outlet property="alamoFireProcess" destination="1KF-Ri-Qbv" id="rSu-Gj-O6D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vEA-sh-FZg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4021.5999999999999" y="3130.8845577211396"/>
+        </scene>
         <!--照相機-->
         <scene sceneID="aUJ-zf-Z3e">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3V1-Og-cjL" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="照相機" id="mgw-VF-AJc"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5fx-fL-l6b">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="5fx-fL-l6b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -741,5 +798,6 @@ Please enjoy it!</string>
         <image name="按下你想吃的那餐吧!" width="399" height="399"/>
         <image name="早餐" width="181" height="77"/>
         <image name="晚餐" width="181" height="77"/>
+        <image name="點選Save來 保存從你的相機 或是相簿" width="223" height="166"/>
     </resources>
 </document>

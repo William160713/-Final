@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F1B92481EFC89A3004575AB /* MGSwipeTableCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1B92421EFC89A3004575AB /* MGSwipeTableCell.framework */; };
+		1F1B92491EFC89A3004575AB /* MGSwipeTableCell.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1B92421EFC89A3004575AB /* MGSwipeTableCell.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F1B924A1EFC89A3004575AB /* RAMAnimatedTabBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1B92431EFC89A3004575AB /* RAMAnimatedTabBarController.framework */; };
+		1F1B924B1EFC89A3004575AB /* RAMAnimatedTabBarController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1B92431EFC89A3004575AB /* RAMAnimatedTabBarController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F1B924C1EFC89A3004575AB /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1B92441EFC89A3004575AB /* Reachability.framework */; };
+		1F1B924D1EFC89A3004575AB /* Reachability.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1B92441EFC89A3004575AB /* Reachability.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F1B924E1EFC89A3004575AB /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1B92451EFC89A3004575AB /* SVProgressHUD.framework */; };
+		1F1B924F1EFC89A3004575AB /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1B92451EFC89A3004575AB /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F1B92561EFCB798004575AB /* AlamoFireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B92551EFCB798004575AB /* AlamoFireViewController.swift */; };
 		1FFD552F1EFBEB5B001783EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FFD552E1EFBEB5B001783EC /* Assets.xcassets */; };
 		1FFD55331EFBEB84001783EC /* WebKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD55321EFBEB84001783EC /* WebKitViewController.swift */; };
 		1FFD55351EFBEC4A001783EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD55341EFBEC4A001783EC /* AppDelegate.swift */; };
@@ -63,7 +72,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				1F1B924F1EFC89A3004575AB /* SVProgressHUD.framework in Embed Frameworks */,
+				1F1B924B1EFC89A3004575AB /* RAMAnimatedTabBarController.framework in Embed Frameworks */,
 				1FFD557E1EFBFE44001783EC /* Alamofire.framework in Embed Frameworks */,
+				1F1B924D1EFC89A3004575AB /* Reachability.framework in Embed Frameworks */,
+				1F1B92491EFC89A3004575AB /* MGSwipeTableCell.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +84,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F1B92421EFC89A3004575AB /* MGSwipeTableCell.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MGSwipeTableCell.framework; path = Carthage/Build/iOS/MGSwipeTableCell.framework; sourceTree = "<group>"; };
+		1F1B92431EFC89A3004575AB /* RAMAnimatedTabBarController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RAMAnimatedTabBarController.framework; path = Carthage/Build/iOS/RAMAnimatedTabBarController.framework; sourceTree = "<group>"; };
+		1F1B92441EFC89A3004575AB /* Reachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reachability.framework; path = Carthage/Build/iOS/Reachability.framework; sourceTree = "<group>"; };
+		1F1B92451EFC89A3004575AB /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
+		1F1B92551EFCB798004575AB /* AlamoFireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamoFireViewController.swift; sourceTree = "<group>"; };
 		1FFD552E1EFBEB5B001783EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = 45645646/Assets.xcassets; sourceTree = "<group>"; };
 		1FFD55301EFBEB6C001783EC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = 45645646/Info.plist; sourceTree = "<group>"; };
 		1FFD55321EFBEB84001783EC /* WebKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebKitViewController.swift; path = 45645646/WebKitViewController.swift; sourceTree = "<group>"; };
@@ -115,14 +133,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FFD555A1EFBF2B1001783EC /* libc++.tbd in Frameworks */,
+				1F1B92481EFC89A3004575AB /* MGSwipeTableCell.framework in Frameworks */,
 				1FFD55581EFBF2A4001783EC /* libz.tbd in Frameworks */,
 				1FFD556D1EFBF98F001783EC /* FirebaseAnalytics.framework in Frameworks */,
+				1F1B924A1EFC89A3004575AB /* RAMAnimatedTabBarController.framework in Frameworks */,
 				1FFD55561EFBF295001783EC /* libsqlite3.tbd in Frameworks */,
+				1F1B924E1EFC89A3004575AB /* SVProgressHUD.framework in Frameworks */,
 				1FFD55791EFBF9E4001783EC /* GTMSessionFetcher.framework in Frameworks */,
 				1FFD555C1EFBF3DF001783EC /* Bolts.framework in Frameworks */,
 				1FFD556E1EFBF98F001783EC /* FirebaseCore.framework in Frameworks */,
 				1FFD55721EFBF98F001783EC /* GoogleToolboxForMac.framework in Frameworks */,
 				1FFD55701EFBF98F001783EC /* FirebaseInstanceID.framework in Frameworks */,
+				1F1B924C1EFC89A3004575AB /* Reachability.framework in Frameworks */,
 				1FFD55711EFBF98F001783EC /* FirebaseNanoPB.framework in Frameworks */,
 				1FFD556F1EFBF98F001783EC /* FirebaseCoreDiagnostics.framework in Frameworks */,
 				1FFD55781EFBF9E4001783EC /* FirebaseAuth.framework in Frameworks */,
@@ -150,6 +172,10 @@
 		1FFD55491EFBED34001783EC /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				1F1B92421EFC89A3004575AB /* MGSwipeTableCell.framework */,
+				1F1B92431EFC89A3004575AB /* RAMAnimatedTabBarController.framework */,
+				1F1B92441EFC89A3004575AB /* Reachability.framework */,
+				1F1B92451EFC89A3004575AB /* SVProgressHUD.framework */,
 				1FFD557C1EFBFE44001783EC /* Alamofire.framework */,
 				1FFD55661EFBF98F001783EC /* Analytics */,
 				1FFD555B1EFBF3DF001783EC /* Bolts.framework */,
@@ -193,6 +219,7 @@
 		1FFE41821EFBAE2E0049B005 = {
 			isa = PBXGroup;
 			children = (
+				1F1B92551EFCB798004575AB /* AlamoFireViewController.swift */,
 				1FFD557A1EFBFB7C001783EC /* Cartfile */,
 				1FFD552E1EFBEB5B001783EC /* Assets.xcassets */,
 				1FFD55301EFBEB6C001783EC /* Info.plist */,
@@ -387,6 +414,10 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RAMAnimatedTabBarController.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/MGSwipeTableCell.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Reachability.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
 			);
 			outputPaths = (
 			);
@@ -402,6 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FFD55421EFBECCC001783EC /* SettingTableViewController.swift in Sources */,
+				1F1B92561EFCB798004575AB /* AlamoFireViewController.swift in Sources */,
 				1FFD55351EFBEC4A001783EC /* AppDelegate.swift in Sources */,
 				1FFD55481EFBED09001783EC /* ViewController.swift in Sources */,
 				1FFD553B1EFBECA5001783EC /* City.swift in Sources */,

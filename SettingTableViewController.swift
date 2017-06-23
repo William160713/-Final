@@ -40,8 +40,8 @@ class SettingTableViewController: UITableViewController,UISearchBarDelegate {
     //UItableView是delegate 也是裝飾者模式
     // 設定選單
     
-    let setting = ["使用方法","UIBezierPath","請開網路","通知", "待吃選項","WebKit展示"]
-    let identities = ["a","b","c","d","e","f"]
+    let setting = ["使用方法","UIBezierPath","請開網路","通知", "待吃選項","WebKit展示","Alamofire下載照片"]
+    let identities = ["a","b","c","d","e","f","h"]
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
