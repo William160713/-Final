@@ -41,16 +41,13 @@ class ViewController: UIViewController, UITextFieldDelegate,MFMailComposeViewCon
          
     }
     
-       override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
+  
+   
 
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
-    
+ 
+   
+
 
     
    //以下實作按下按鈕會推薦餐點的功能（早餐午餐晚餐）

@@ -7,18 +7,34 @@
 //
 
 import UIKit
+import MGSwipeTableCell
+import SCLAlertView
 
 
 
 
-class SettingTableViewController: UITableViewController,UISearchBarDelegate {
+class SettingTableViewController: UITableViewController,UISearchBarDelegate,UITextFieldDelegate {
 
   
     @IBOutlet weak var searchBar: UISearchBar!
     
     var filteredData  = [String]()
     var isSearching = false
+   
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.tableView.endEditing(true)
+    }
+ 
     
+    //按下return後消失
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+   
+    
+    
+   
     
     
     override func viewDidLoad() {
@@ -62,9 +78,44 @@ class SettingTableViewController: UITableViewController,UISearchBarDelegate {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        // Configure the cell...
+
+        let  cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableCell", for: indexPath) as! MGSwipeTableCell
+        
+        cell.leftButtons = [MGSwipeButton(title: "測試", icon: UIImage(named:"check.png"), backgroundColor: .green){
+             (sender: MGSwipeTableCell!) -> Bool in
+            
+            SCLAlertView().showInfo("嗨", subTitle: "這是SCLAlertView的示範")
+            
+            
+            return true
+            } ,MGSwipeButton(title: "示範", icon: UIImage(named:"fav.png"), backgroundColor: .red){
+                (sender: MGSwipeTableCell!) -> Bool in
+                
+                SCLAlertView().showInfo("嗨", subTitle: "這是SCLAlertView的示範")
+                
+                
+                return true
+            }
+        ]
+        cell.leftSwipeSettings.transition = .rotate3D
+        
+        cell.rightButtons = [MGSwipeButton(title: "示範", backgroundColor: .red){
+            (sender: MGSwipeTableCell!) -> Bool in
+            
+            SCLAlertView().showInfo("嗨", subTitle: "這是SCLAlertView的示範")
+            
+            
+            return true
+            },MGSwipeButton(title: "測試",backgroundColor: .lightGray){
+                (sender: MGSwipeTableCell!) -> Bool in
+                
+                SCLAlertView().showInfo("嗨", subTitle: "這是SCLAlertView的示範")
+                
+                
+                return true
+            }]
+        cell.rightSwipeSettings.transition = .border
         
         
         

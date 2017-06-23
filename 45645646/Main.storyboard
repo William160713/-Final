@@ -244,11 +244,11 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="95" id="c1T-VZ-C6Y">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomTableCell" rowHeight="95" id="c1T-VZ-C6Y" customClass="MGSwipeTableCell">
                                 <rect key="frame" x="0.0" y="72" width="375" height="95"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c1T-VZ-C6Y" id="94X-Aq-KM1">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -319,7 +319,7 @@ Please enjoy it!</string>
                                 <rect key="frame" x="0.0" y="28" width="375" height="69"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ch3-57-Tna" id="7wV-Bf-Aya">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="68"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -484,7 +484,7 @@ Please enjoy it!</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="餐點選擇" id="Jtk-M3-gUU"/>
+                    <tabBarItem key="tabBarItem" title="餐點選擇" image="ic_keyboard_18pt_2x" id="Jtk-M3-gUU"/>
                     <connections>
                         <outlet property="meal" destination="bVp-xC-wdq" id="7VA-kA-sIK"/>
                         <outlet property="mealPhoto" destination="AWs-w0-WNA" id="hiT-S6-02s"/>
@@ -598,7 +598,7 @@ Please enjoy it!</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="其他" id="2U7-EE-3bW"/>
+                    <tabBarItem key="tabBarItem" title="其他" image="ic_satellite_18pt_2x" id="2U7-EE-3bW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jsw-ag-9NE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -608,9 +608,9 @@ Please enjoy it!</string>
         <scene sceneID="sPY-8n-eTD">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CNa-CC-6bK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我的設定" id="xin-qT-u9K"/>
+                    <tabBarItem key="tabBarItem" title="我的設定" image="ic_dehaze_18pt_2x" id="xin-qT-u9K"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Lz0-vk-bw7">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lz0-vk-bw7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -628,7 +628,7 @@ Please enjoy it!</string>
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ncl-3h-6mt" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="khh-f1-eF4">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="khh-f1-eF4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -661,7 +661,7 @@ Please enjoy it!</string>
                                         <rect key="frame" x="0.0" y="28" width="375" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uc4-ek-umy" id="UFg-38-fFQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -774,9 +774,9 @@ Please enjoy it!</string>
         <scene sceneID="aUJ-zf-Z3e">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3V1-Og-cjL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="照相機" id="mgw-VF-AJc"/>
+                    <tabBarItem key="tabBarItem" title="照相機" image="ic_add_a_photo_18pt_2x" id="mgw-VF-AJc"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="5fx-fL-l6b">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5fx-fL-l6b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -787,13 +787,17 @@ Please enjoy it!</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OV3-8T-oxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="746" y="2314"/>
+            <point key="canvasLocation" x="714" y="1940"/>
         </scene>
     </scenes>
     <resources>
         <image name="Page1" width="1242" height="2208"/>
         <image name="Page2" width="1080" height="1920"/>
         <image name="Page3" width="744" height="1392"/>
+        <image name="ic_add_a_photo_18pt_2x" width="36" height="36"/>
+        <image name="ic_dehaze_18pt_2x" width="36" height="36"/>
+        <image name="ic_keyboard_18pt_2x" width="36" height="36"/>
+        <image name="ic_satellite_18pt_2x" width="36" height="36"/>
         <image name="午餐" width="181" height="77"/>
         <image name="按下你想吃的那餐吧!" width="399" height="399"/>
         <image name="早餐" width="181" height="77"/>
