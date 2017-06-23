@@ -222,9 +222,8 @@ class ViewController: UIViewController, UITextFieldDelegate,MFMailComposeViewCon
         let components = calendar.dateComponents([ .hour, .minute],from: date)
         let trigger = UNCalendarNotificationTrigger(dateMatching:
             components, repeats: true)
+        
         let content = UNMutableNotificationContent()
-        
-        
         content.body = "不知道要吃什麼嗎？趕快來這看看吧！"
         content.badge = 1
         content.sound = UNNotificationSound.default()
