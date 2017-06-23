@@ -14,6 +14,7 @@ class AlamoFireViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        alamoFireProcess.progress = 0
         // Do any additional setup after loading the view.
     }
 
@@ -36,7 +37,11 @@ class AlamoFireViewController: UIViewController {
         
         
         if sender.isOn == true {
-            alamoFireLabel.text = "已下載"
+        
+            
+                alamoFireLabel.text = "已下載"
+                
+            
             Alamofire.request("http://pic.pimg.tw/aling5888/1367425874-1230345628.jpg?v=1367425875").downloadProgress(closure: { (progress) in
                 print(progress.fractionCompleted)
                 self.alamoFireProcess.progress = Float(progress.fractionCompleted)
@@ -56,7 +61,12 @@ class AlamoFireViewController: UIViewController {
         }
             
         else {
-            alamoFireLabel.text = "下載完成"
+            
+            if alamoFireProcess.progress == 0 {
+                alamoFireLabel.text = "未下載"
+            }
+            
+            
         }
 
     }
