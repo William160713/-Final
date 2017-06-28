@@ -585,9 +585,12 @@ Please enjoy it!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oty-id-8zx">
-                                <rect key="frame" x="24" y="28" width="31" height="30"/>
+                                <rect key="frame" x="58" y="471" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="測試"/>
+                                <state key="normal" title="關閉"/>
+                                <connections>
+                                    <action selector="closeMenu:" destination="bKl-IQ-GeX" eventType="touchUpInside" id="bSh-oW-wt5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -595,7 +598,7 @@ Please enjoy it!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="32j-TJ-Ejo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="526" y="205"/>
+            <point key="canvasLocation" x="525.60000000000002" y="204.64767616191907"/>
         </scene>
         <!--Other View Controller-->
         <scene sceneID="jMW-FX-JVO">
@@ -624,7 +627,7 @@ Please enjoy it!</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="czQ-Qi-4zb">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="wd8-SH-VNh">
+                        <barButtonItem key="leftBarButtonItem" title="選項" id="wd8-SH-VNh">
                             <connections>
                                 <action selector="openSlideMenu:" destination="sq8-i6-85v" id="pCg-qT-bGt"/>
                             </connections>

@@ -1,0 +1,18 @@
+{
+  "iOS" : [
+    {
+      "hash" : "a7388291ccfa5d6aabe2cad91916c1c5785063d8b427a49116b2db1eac1a1242",
+      "name" : "SlideMenuControllerSwift"
+    }
+  ],
+  "commitish" : "3.0.1",
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "Mac" : [
+
+  ]
+}

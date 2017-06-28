@@ -1,0 +1,18 @@
+{
+  "iOS" : [
+    {
+      "hash" : "4446cfb35c3b73082d95c82e79413109f68abbc13a6f86ef815993f5b0ac21c9",
+      "name" : "SCLAlertView"
+    }
+  ],
+  "commitish" : "9b743c259e58cac54f001ce1ef6c5c74b3164735",
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "Mac" : [
+
+  ]
+}

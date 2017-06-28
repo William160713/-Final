@@ -1,0 +1,18 @@
+{
+  "iOS" : [
+    {
+      "hash" : "8cb361c2195b05b68de2bf55eddda55d4d1ff79406b5da56437fb054b0e2ffad",
+      "name" : "MGSwipeTableCell"
+    }
+  ],
+  "commitish" : "1.5.6",
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "Mac" : [
+
+  ]
+}

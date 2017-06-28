@@ -181,6 +181,7 @@
 		1FFD55491EFBED34001783EC /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				1FBF2BBE1F0340A5003C25C5 /* Alamofire.framework */,
 				1F94C61E1F033C8C00E471A3 /* MGSwipeTableCell.framework */,
 				1F94C61F1F033C8C00E471A3 /* Reachability.framework */,
 				1F94C6201F033C8C00E471A3 /* SCLAlertView.framework */,
@@ -228,7 +229,6 @@
 		1FFE41821EFBAE2E0049B005 = {
 			isa = PBXGroup;
 			children = (
-				1FBF2BBE1F0340A5003C25C5 /* Alamofire.framework */,
 				1F1B92551EFCB798004575AB /* AlamoFireViewController.swift */,
 				1FFD557A1EFBFB7C001783EC /* Cartfile */,
 				1FFD552E1EFBEB5B001783EC /* Assets.xcassets */,

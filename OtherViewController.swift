@@ -63,7 +63,10 @@ class OtherViewController: SlideMenuController,MFMailComposeViewControllerDelega
     @IBAction func openSlideMenu(_ sender: Any) {
         
         self.slideMenuController()?.openLeft()
+        
     }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,7 +74,8 @@ class OtherViewController: SlideMenuController,MFMailComposeViewControllerDelega
         let lvc = self.storyboard?.instantiateViewController(withIdentifier: "SlideLeftViewController") as! SlideLeftViewController
         self.slideMenuController()?.leftViewController = lvc
         self.slideMenuController()?.addLeftGestures()
-
+        SlideMenuOptions.rightViewWidth = 50
+        
         
         
         // Do any additional setup after loading the view.

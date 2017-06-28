@@ -7,8 +7,17 @@
 //
 
 import UIKit
+import SlideMenuControllerSwift
 
 class SlideLeftViewController: UIViewController {
+    
+    
+    @IBAction func closeMenu(_ sender: Any) {
+        
+        self.slideMenuController()?.closeLeft()
+    }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
