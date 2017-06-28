@@ -3,7 +3,7 @@ import UIKit
 import CoreData
 import UserNotifications
 import FirebaseCore
-
+import Reachability
 
 
 
@@ -23,9 +23,82 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-         
-     FirebaseApp.configure()
         
+        //查詢網路狀態
+        
+        let reachability = Reachability()!
+        reachability.whenReachable = {
+            reachability in
+            //上面的在背景執行
+            
+            //下面在UI執行
+            DispatchQueue.main.async {
+                if reachability.isReachableViaWiFi {
+                    
+                    let topWindow = UIWindow(frame: UIScreen.main.bounds)
+                    topWindow.rootViewController = UIViewController()
+                    topWindow.windowLevel = UIWindowLevelAlert + 1
+                    let alert = UIAlertController(title: "提示", message: "你正在使用Wifi連線", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "確認"), style: .cancel, handler: {(_ action: UIAlertAction) -> Void in
+                       
+                        topWindow.isHidden = true
+                    }))
+                    topWindow.makeKeyAndVisible()
+                    topWindow.rootViewController?.present(alert, animated: true, completion: { _ in })
+                   
+                    
+                    print("由wifi連接")
+                } else {
+                    
+                    let topWindow = UIWindow(frame: UIScreen.main.bounds)
+                    topWindow.rootViewController = UIViewController()
+                    topWindow.windowLevel = UIWindowLevelAlert + 1
+                    let alert = UIAlertController(title: "提示", message: "你正在使用行動網路連線", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "確認"), style: .cancel, handler: {(_ action: UIAlertAction) -> Void in
+                        
+                        topWindow.isHidden = true
+                    }))
+                    topWindow.makeKeyAndVisible()
+                    topWindow.rootViewController?.present(alert, animated: true, completion: { _ in })
+                    
+                    print("由行動網路連接")
+                }
+                
+            }
+            
+        }
+        
+        reachability.whenUnreachable = {
+            reachability in
+            
+            DispatchQueue.main.async {
+                
+                let topWindow = UIWindow(frame: UIScreen.main.bounds)
+                topWindow.rootViewController = UIViewController()
+                topWindow.windowLevel = UIWindowLevelAlert + 1
+                let alert = UIAlertController(title: "提示", message: "無網路連線", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "確認"), style: .cancel, handler: {(_ action: UIAlertAction) -> Void in
+                    
+                    topWindow.isHidden = true
+                }))
+                topWindow.makeKeyAndVisible()
+                topWindow.rootViewController?.present(alert, animated: true, completion: { _ in })
+                print("沒有網路連接")
+            }
+        }
+        
+        do {
+            try reachability.startNotifier()
+        } catch  {
+            print("無法開始監視網路狀態")
+        }
+        
+        reachability.stopNotifier()
+        
+        FirebaseApp.configure()
+        
+        
+        //通知
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: { granted, error in
             if granted {
                 print("使用者同意")

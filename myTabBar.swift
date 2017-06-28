@@ -7,10 +7,10 @@
 //
 
 import UIKit
-import RAMAnimatedTabBarController
 
 
-class myTabBar: UITabBarController {
+
+class myTabBar:UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

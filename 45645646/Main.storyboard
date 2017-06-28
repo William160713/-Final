@@ -248,7 +248,7 @@
                                 <rect key="frame" x="0.0" y="72" width="375" height="95"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c1T-VZ-C6Y" id="94X-Aq-KM1">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -319,7 +319,7 @@ Please enjoy it!</string>
                                 <rect key="frame" x="0.0" y="28" width="375" height="69"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ch3-57-Tna" id="7wV-Bf-Aya">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="68"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -492,7 +492,7 @@ Please enjoy it!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQ6-Yi-rfw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="607" y="445"/>
+            <point key="canvasLocation" x="1544.8" y="444.82758620689657"/>
         </scene>
         <!--My Tab Bar-->
         <scene sceneID="mbU-nx-g1U">
@@ -510,7 +510,7 @@ Please enjoy it!</string>
                         <segue destination="5hb-gX-Q2X" kind="relationship" relationship="viewControllers" id="VGj-ID-q7D"/>
                         <segue destination="3V1-Og-cjL" kind="relationship" relationship="viewControllers" id="A0T-Yg-O2u"/>
                         <segue destination="CNa-CC-6bK" kind="relationship" relationship="viewControllers" id="621-Ze-Ac7"/>
-                        <segue destination="sq8-i6-85v" kind="relationship" relationship="viewControllers" id="oHA-hP-9Hu"/>
+                        <segue destination="idb-R2-9mM" kind="relationship" relationship="viewControllers" id="oHA-hP-9Hu"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mQd-nu-TkT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -529,10 +529,6 @@ Please enjoy it!</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="點選Save來 保存從你的相機 或是相簿" translatesAutoresizingMaskIntoConstraints="NO" id="VpE-Qn-iza">
-                                <rect key="frame" x="56" y="131" width="240" height="189"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjV-mC-Ytt">
                                 <rect key="frame" x="66" y="426" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -549,6 +545,10 @@ Please enjoy it!</string>
                                     <action selector="openPhotoLibraryButton:" destination="kyE-8z-Dby" eventType="touchUpInside" id="NRV-BN-9Iq"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="點選Save來 保存從你的相機 或是相簿" translatesAutoresizingMaskIntoConstraints="NO" id="VpE-Qn-iza">
+                                <rect key="frame" x="67" y="141" width="240" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -572,10 +572,35 @@ Please enjoy it!</string>
             </objects>
             <point key="canvasLocation" x="1935" y="2448"/>
         </scene>
-        <!--其他-->
+        <!--Slide Left View Controller-->
+        <scene sceneID="jgE-dq-ZuJ">
+            <objects>
+                <viewController storyboardIdentifier="SlideLeftViewController" id="bKl-IQ-GeX" customClass="SlideLeftViewController" customModule="_5645646" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k3R-N2-WT5"/>
+                        <viewControllerLayoutGuide type="bottom" id="0dN-iC-Ruh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zxe-kW-sGr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oty-id-8zx">
+                                <rect key="frame" x="24" y="28" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="測試"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="32j-TJ-Ejo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="526" y="205"/>
+        </scene>
+        <!--Other View Controller-->
         <scene sceneID="jMW-FX-JVO">
             <objects>
-                <viewController id="sq8-i6-85v" customClass="ViewController" customModule="_5645646" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sq8-i6-85v" customClass="OtherViewController" customModule="_5645646" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tGm-E9-UyK"/>
                         <viewControllerLayoutGuide type="bottom" id="SXS-Nt-ZmQ"/>
@@ -592,17 +617,23 @@ Please enjoy it!</string>
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="sendEmailToMe:" destination="sq8-i6-85v" eventType="touchUpInside" id="4Uw-YG-Js0"/>
+                                    <action selector="sendEmailToMe:" destination="sq8-i6-85v" eventType="touchUpInside" id="I1k-TM-Trf"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="其他" image="ic_satellite_18pt_2x" id="2U7-EE-3bW"/>
+                    <navigationItem key="navigationItem" id="czQ-Qi-4zb">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="wd8-SH-VNh">
+                            <connections>
+                                <action selector="openSlideMenu:" destination="sq8-i6-85v" id="pCg-qT-bGt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jsw-ag-9NE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-287" y="874"/>
+            <point key="canvasLocation" x="527" y="874"/>
         </scene>
         <!--我的設定-->
         <scene sceneID="sPY-8n-eTD">
@@ -621,7 +652,7 @@ Please enjoy it!</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b5I-jE-qIi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="606" y="1218"/>
+            <point key="canvasLocation" x="1544.8" y="1217.5412293853074"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3SR-UQ-VBQ">
@@ -661,7 +692,7 @@ Please enjoy it!</string>
                                         <rect key="frame" x="0.0" y="28" width="375" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uc4-ek-umy" id="UFg-38-fFQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -726,10 +757,10 @@ Please enjoy it!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w1x-I5-z3w">
-                                <rect key="frame" x="67" y="108" width="240" height="240"/>
+                                <rect key="frame" x="67" y="108" width="241" height="240"/>
                             </imageView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DZy-A4-ahd">
-                                <rect key="frame" x="163" y="469" width="51" height="31"/>
+                                <rect key="frame" x="163.5" y="469" width="51" height="31"/>
                                 <connections>
                                     <action selector="alamoFireSwitch:" destination="Wo8-Da-Yzt" eventType="valueChanged" id="HTy-xl-Gw6"/>
                                 </connections>
@@ -788,6 +819,25 @@ Please enjoy it!</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OV3-8T-oxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="714" y="1940"/>
+        </scene>
+        <!--其他-->
+        <scene sceneID="1IF-td-TBu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="idb-R2-9mM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="其他" image="ic_satellite_18pt_2x" id="2U7-EE-3bW"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MvJ-dq-leO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sq8-i6-85v" kind="relationship" relationship="rootViewController" id="CNc-AI-344"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MXh-db-fj8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-287.19999999999999" y="873.91304347826099"/>
         </scene>
     </scenes>
     <resources>

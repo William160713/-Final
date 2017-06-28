@@ -4,12 +4,11 @@ import UIKit
 
 import UserNotifications
 import AVFoundation
-import MessageUI
 import FirebaseCore
-
 import CoreData
 import Alamofire
 import FirebaseAuth
+import SlideMenuControllerSwift
 
 
 
@@ -18,8 +17,7 @@ import FirebaseAuth
 
 
 
-
-class ViewController: UIViewController, UITextFieldDelegate,MFMailComposeViewControllerDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+class ViewController: UIViewController, UITextFieldDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
 
     
@@ -250,52 +248,9 @@ class ViewController: UIViewController, UITextFieldDelegate,MFMailComposeViewCon
     
     
     
-    //傳送意見
-  
-    @IBAction func sendEmailToMe(_ sender: Any) {
-        let mailComposeViewController = configuredMailComposeViewController()
-        if MFMailComposeViewController.canSendMail() {
-            
-            self.present(mailComposeViewController, animated: true, completion: nil)
-            
-            
-        } else {
-            self.showSendMailAlert()
-        }
-        
-    }
-    
-    
-    func configuredMailComposeViewController() -> MFMailComposeViewController {
-        let mailComposerVC = MFMailComposeViewController()
-        mailComposerVC.mailComposeDelegate = self
-        mailComposerVC.setToRecipients(["fghtgb456852@gmail.com"])
-        mailComposerVC.setSubject("關於App的意見")
-        mailComposerVC.setMessageBody("請在這寫下你寶貴的意見吧！", isHTML: true)
-        
-        
-        return mailComposerVC
-    }
 
-    
-   
-    
-    func showSendMailAlert() {
-        
-        let myAlert = UIAlertController(title: "警告", message: "Email無法傳送，請確認網路狀況之後再試一次", preferredStyle: UIAlertControllerStyle.alert)
-        
-        let okAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.default, handler: nil)
-        
-        myAlert.addAction(okAction)
-        present(myAlert, animated:true, completion: nil)
-    }
-    
-    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        controller.dismiss(animated: true, completion: nil)
-    }
-    
-    
   
+   
     //取用相機
     @IBOutlet weak var imagePicked: UIImageView!
   
