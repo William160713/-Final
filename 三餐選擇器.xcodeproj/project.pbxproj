@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1F1B92561EFCB798004575AB /* AlamoFireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B92551EFCB798004575AB /* AlamoFireViewController.swift */; };
-		1F94C6231F033C8C00E471A3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F94C61D1F033C8C00E471A3 /* Alamofire.framework */; };
-		1F94C6241F033C8C00E471A3 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F94C61D1F033C8C00E471A3 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1F94C6251F033C8C00E471A3 /* MGSwipeTableCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F94C61E1F033C8C00E471A3 /* MGSwipeTableCell.framework */; };
 		1F94C6261F033C8C00E471A3 /* MGSwipeTableCell.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F94C61E1F033C8C00E471A3 /* MGSwipeTableCell.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1F94C6271F033C8C00E471A3 /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F94C61F1F033C8C00E471A3 /* Reachability.framework */; };
@@ -22,6 +20,8 @@
 		1F94C62E1F033C8C00E471A3 /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F94C6221F033C8C00E471A3 /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1F9B98F61F02A0D400295856 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9B98F51F02A0D400295856 /* OtherViewController.swift */; };
 		1F9B98F81F02A5CC00295856 /* SlideLeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9B98F71F02A5CB00295856 /* SlideLeftViewController.swift */; };
+		1FBF2BBF1F0340A5003C25C5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBF2BBE1F0340A5003C25C5 /* Alamofire.framework */; };
+		1FBF2BC01F0340A5003C25C5 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBF2BBE1F0340A5003C25C5 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1FFD552F1EFBEB5B001783EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FFD552E1EFBEB5B001783EC /* Assets.xcassets */; };
 		1FFD55331EFBEB84001783EC /* WebKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD55321EFBEB84001783EC /* WebKitViewController.swift */; };
 		1FFD55351EFBEC4A001783EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD55341EFBEC4A001783EC /* AppDelegate.swift */; };
@@ -77,9 +77,9 @@
 			dstSubfolderSpec = 10;
 			files = (
 				1F94C62E1F033C8C00E471A3 /* SVProgressHUD.framework in Embed Frameworks */,
+				1FBF2BC01F0340A5003C25C5 /* Alamofire.framework in Embed Frameworks */,
 				1F94C6261F033C8C00E471A3 /* MGSwipeTableCell.framework in Embed Frameworks */,
 				1F94C6281F033C8C00E471A3 /* Reachability.framework in Embed Frameworks */,
-				1F94C6241F033C8C00E471A3 /* Alamofire.framework in Embed Frameworks */,
 				1F94C62C1F033C8C00E471A3 /* SlideMenuControllerSwift.framework in Embed Frameworks */,
 				1F94C62A1F033C8C00E471A3 /* SCLAlertView.framework in Embed Frameworks */,
 			);
@@ -90,7 +90,6 @@
 
 /* Begin PBXFileReference section */
 		1F1B92551EFCB798004575AB /* AlamoFireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamoFireViewController.swift; sourceTree = "<group>"; };
-		1F94C61D1F033C8C00E471A3 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		1F94C61E1F033C8C00E471A3 /* MGSwipeTableCell.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MGSwipeTableCell.framework; path = Carthage/Build/iOS/MGSwipeTableCell.framework; sourceTree = "<group>"; };
 		1F94C61F1F033C8C00E471A3 /* Reachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reachability.framework; path = Carthage/Build/iOS/Reachability.framework; sourceTree = "<group>"; };
 		1F94C6201F033C8C00E471A3 /* SCLAlertView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCLAlertView.framework; path = Carthage/Build/iOS/SCLAlertView.framework; sourceTree = "<group>"; };
@@ -98,6 +97,7 @@
 		1F94C6221F033C8C00E471A3 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 		1F9B98F51F02A0D400295856 /* OtherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 		1F9B98F71F02A5CB00295856 /* SlideLeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideLeftViewController.swift; sourceTree = "<group>"; };
+		1FBF2BBE1F0340A5003C25C5 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		1FFD552E1EFBEB5B001783EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = 45645646/Assets.xcassets; sourceTree = "<group>"; };
 		1FFD55301EFBEB6C001783EC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = 45645646/Info.plist; sourceTree = "<group>"; };
 		1FFD55321EFBEB84001783EC /* WebKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebKitViewController.swift; path = 45645646/WebKitViewController.swift; sourceTree = "<group>"; };
@@ -141,9 +141,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F94C6251F033C8C00E471A3 /* MGSwipeTableCell.framework in Frameworks */,
+				1FBF2BBF1F0340A5003C25C5 /* Alamofire.framework in Frameworks */,
 				1FFD555A1EFBF2B1001783EC /* libc++.tbd in Frameworks */,
 				1FFD55581EFBF2A4001783EC /* libz.tbd in Frameworks */,
-				1F94C6231F033C8C00E471A3 /* Alamofire.framework in Frameworks */,
 				1FFD556D1EFBF98F001783EC /* FirebaseAnalytics.framework in Frameworks */,
 				1FFD55561EFBF295001783EC /* libsqlite3.tbd in Frameworks */,
 				1F94C62D1F033C8C00E471A3 /* SVProgressHUD.framework in Frameworks */,
@@ -181,7 +181,6 @@
 		1FFD55491EFBED34001783EC /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				1F94C61D1F033C8C00E471A3 /* Alamofire.framework */,
 				1F94C61E1F033C8C00E471A3 /* MGSwipeTableCell.framework */,
 				1F94C61F1F033C8C00E471A3 /* Reachability.framework */,
 				1F94C6201F033C8C00E471A3 /* SCLAlertView.framework */,
@@ -229,6 +228,7 @@
 		1FFE41821EFBAE2E0049B005 = {
 			isa = PBXGroup;
 			children = (
+				1FBF2BBE1F0340A5003C25C5 /* Alamofire.framework */,
 				1F1B92551EFCB798004575AB /* AlamoFireViewController.swift */,
 				1FFD557A1EFBFB7C001783EC /* Cartfile */,
 				1FFD552E1EFBEB5B001783EC /* Assets.xcassets */,
@@ -425,9 +425,9 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.frameworkile",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Reachability.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.frameworkle",
+				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/MGSwipeTableCell.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SCLAlertView.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SlideMenuControllerSwift.framework",
