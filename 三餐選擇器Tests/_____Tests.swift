@@ -1,15 +1,14 @@
 //
-//  _5645646Tests.swift
-//  45645646Tests
+//  _____Tests.swift
+//  三餐選擇器Tests
 //
-//  Created by suwen-liang on 2017/6/22.
+//  Created by suwen-liang on 2017/6/29.
 //  Copyright © 2017年 suwen-liang. All rights reserved.
 //
 
 import XCTest
-@testable import _5645646
 
-class _5645646Tests: XCTestCase {
+class _____Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()

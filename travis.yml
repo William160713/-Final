@@ -1,0 +1,5 @@
+language: objective-c
+osx_image: xcode8.2
+xcode_project: 三餐選擇器.xcodeproj # path to your xcodeproj folder
+xcode_scheme: _____Tests
+xcode_sdk:iphonesimulator10.1
